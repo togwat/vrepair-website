@@ -1,0 +1,39 @@
+.hero-background {
+    background-color: #111827;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-decoration {
+    filter: blur(64px);
+    border-radius: 9999px;  /* full circle */
+
+    position: absolute;
+}
+
+.bottom-left {
+    background-color: rgb(59 130 246 / 0.1);
+    
+    width: 20rem;
+    height: 20rem;
+
+    margin-left: -5rem;
+    margin-bottom: -5rem;
+
+    left: 0;
+    bottom: 0;
+}
+
+.top-right {
+    background-color: rgb(234 88 18 / 0.2);
+
+    width: 24rem;
+    height: 24rem;
+
+    margin-top: -5rem;
+    margin-right: -5rem;
+
+    top: 0;
+    right: 0;
+}
