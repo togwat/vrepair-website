@@ -1,4 +1,4 @@
-import EStore from '../assets/E-Store.jpg'
+import EStore from '../assets/E-Store.svg'
 import './css/Logo.css'
 
 export default function Logo() {
