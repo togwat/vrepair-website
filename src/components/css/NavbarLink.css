@@ -1,6 +1,6 @@
 .navbar-link {
     text-decoration: none;
-    color: var(--colour-grey-text);
+    color: var(--colour-grey-text-dark);
     font-weight: 500;   /* medium */
 }
 

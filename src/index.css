@@ -5,7 +5,8 @@
   /* colours */
   --colour-accent: #E55B18;
   --colour-accent-hover: #B74913;
-  --colour-grey-text: #4B5563;
+  --colour-grey-text-dark: #4B5563;
+  --colour-grey-text-light: #D1D5DB;
 }
 
 body {

@@ -1,7 +1,9 @@
 .hero-background {
+    z-index: -1;
     background-color: #111827;
+    position: absolute;
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
