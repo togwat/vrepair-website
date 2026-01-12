@@ -3,7 +3,7 @@ import HeroBackground from './HeroBackground'
 
 export default function Hero() {
     return (
-        <header>
+        <header className="hero">
             <HeroBackground />
         </header>
     )
