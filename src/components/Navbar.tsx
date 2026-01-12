@@ -8,9 +8,9 @@ export default function Navbar() {
         <nav className="navbar">
             <Logo />
             <div className="navbar-links">
-                <NavbarLink link="#todo" children="Services" />
-                <NavbarLink link="#todo" children="Pricing" />
-                <NavbarLink link="#todo" children="About" />
+                <NavbarLink link="#todo">Services</NavbarLink>
+                <NavbarLink link="#todo">Pricing</NavbarLink>
+                <NavbarLink link="#todo">About</NavbarLink>
                 <NavbarCall />
             </div>
         </nav>
