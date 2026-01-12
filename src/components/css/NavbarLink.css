@@ -1,0 +1,10 @@
+.navbar-link {
+    text-decoration: none;
+    color: var(--colour-grey-text);
+    font-weight: 500;   /* medium */
+}
+
+.navbar-link:hover {
+    color: var(--colour-accent);
+    transition: 150ms;
+}
