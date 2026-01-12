@@ -45,3 +45,19 @@
     align-items: center;
     gap: 1rem;
 }
+
+.hero-verify-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2rem;
+
+    padding-top: 2rem;
+    margin-top: 4rem;
+    
+    border-style: solid;
+    border-color: #1F2937;
+    border-width: 0;
+    border-top-width: 1px;
+}

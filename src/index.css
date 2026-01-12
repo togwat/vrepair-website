@@ -8,7 +8,10 @@
   --colour-grey-text-dark: #4B5563;
   --colour-grey-text-light: #D1D5DB;
 
+  --colour-grey-400: #9CA3AF;
   --colour-grey-700: #374151;
+
+  --colour-green-500: #22C55E;
 }
 
 body {

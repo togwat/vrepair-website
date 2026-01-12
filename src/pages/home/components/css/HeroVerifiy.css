@@ -1,0 +1,15 @@
+.hero-verify {
+    color: var(--colour-grey-400);
+    font-weight: 500;   /* medium */
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-verify span {
+    color: var(--colour-green-500);
+}
