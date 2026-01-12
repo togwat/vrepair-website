@@ -23,5 +23,4 @@
 
 .navbar-call .navbar-link:hover {
     background-color: var(--colour-accent-hover);
-    transition: 150ms;
 }

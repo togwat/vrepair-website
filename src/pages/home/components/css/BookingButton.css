@@ -1,0 +1,10 @@
+.booking-button .hero-button {
+    color: #FFF;
+    background-color: var(--colour-accent);
+    border-width: 0;
+}
+
+.booking-button .hero-button:hover {
+    background-color: var(--colour-accent-hover);
+    transform: translateY(-0.25rem);
+}
