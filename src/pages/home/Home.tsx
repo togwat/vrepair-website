@@ -1,12 +1,13 @@
 import Navbar from '../../components/Navbar'
 import Hero from './components/Hero'
+import Section1 from './components/Section1'
 
 export default function Home() {
     return (
         <>
             <Navbar />
             <Hero />
-            <h1>Hello World</h1>
+            <Section1 />
         </>
     )
 }

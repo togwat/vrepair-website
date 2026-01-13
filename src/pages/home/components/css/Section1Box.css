@@ -1,0 +1,44 @@
+.section1-box {
+    background-color: var(--colour-grey-50);
+
+    padding: 2rem;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--colour-grey-100);
+    border-radius: 1rem;
+}
+
+.section1-box:hover {
+    background-color: #FFF;
+    transition-duration: 300ms;
+
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.section1-box:hover .section1-box-icon {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+.section1-box-icon {    /* icon box */
+    background-color: var(--box-accent-2);
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border-radius: 0.75rem;
+    
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-box span {    /* actual icon */
+    color: var(--box-accent-1);
+
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
