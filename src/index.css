@@ -5,6 +5,7 @@
   /* colours */
   --colour-accent: #E55B18;
   --colour-accent-hover: #B74913;
+  --colour-grey-text-black: #111827;
   --colour-grey-text-dark: #4B5563;
   --colour-grey-text-light: #D1D5DB;
   
@@ -24,6 +25,8 @@ body {
   min-height: 100vh;
 
   overflow-x: hidden;
+
+  color: var(--colour-grey-text-black);
 }
 
 .transition-default {

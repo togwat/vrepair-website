@@ -6,6 +6,40 @@
     padding-right: 12rem;
 }
 
+.section1-text {
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+.section1-text h2 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.025rem;
+    font-weight: 700;   /* bold */
+    color: var(--colour-accent);
+
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+
+    text-transform: uppercase;
+}
+
+.section1-text h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 800;   /* extra-bold */
+
+    margin: 0;
+}
+
+.section1-text p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+
+    color: var(--colour-grey-text-dark);
+}
+
 .section1-boxes {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -21,6 +55,11 @@
 
 /* tablet */
 @media only screen and (max-width: 1024px) {
+    .section1-text h3 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
     .section1-boxes {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 2rem;
