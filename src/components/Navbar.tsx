@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import NavbarCall from "./NavbarCall";
 import NavbarLink from "./NavbarLink";
+import NavbarMenu from "./NavbarMenu";
 import './css/Navbar.css'
 
 export default function Navbar() {
@@ -13,6 +14,7 @@ export default function Navbar() {
                 <NavbarLink link="#todo">About</NavbarLink>
                 <NavbarCall />
             </div>
+            <NavbarMenu />
         </nav>
     )
 }
