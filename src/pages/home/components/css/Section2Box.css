@@ -45,6 +45,10 @@
     font-weight: 700;   /* bold */
 
     margin: 0;
+}
+
+.section2-box p {
+    color: var(--colour-grey-text-dark);
     margin-bottom: 2rem;
 }
 
@@ -54,7 +58,6 @@
 
     font-weight: 700;   /* bold */
 
-
     background-color: var(--colour-grey-text-black);
 
     border-radius: 0.75rem;
@@ -63,6 +66,9 @@
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .section2-box a:hover {
