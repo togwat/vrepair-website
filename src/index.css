@@ -26,6 +26,10 @@
   --colour-icon-green: #16A34A;
   --colour-icon-green-background: #dcfce7;
 
+  /* main body margin/padding */
+  --body-padding-default: 12rem;
+  --body-padding-laptop: 6rem;
+
   scroll-behavior: smooth;
 }
 
