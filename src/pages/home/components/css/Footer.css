@@ -1,0 +1,15 @@
+footer {
+    border-top-style: solid;
+    border-color: #E5E7EB;
+    border-width: 0;
+    border-top-width: 1px;
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--colour-grey-text-dark);
+
+    margin: 0;
+    padding: 1rem 12rem;
+
+    text-align: right;
+}

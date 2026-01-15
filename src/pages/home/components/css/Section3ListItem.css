@@ -15,8 +15,10 @@
 }
 
 .section3-list-item-content a, .section3-list-item-content p {
+    display: block;
     text-decoration: none;
     color: var(--colour-grey-text-light);
+    line-height: 1.75rem;
     margin: 0;
 }
 

@@ -4,7 +4,7 @@ import './css/NavbarCall.css'
 export default function NavbarCall() {
     return (
         <div className="navbar-call">
-            <NavbarLink link="todo">
+            <NavbarLink link="tel:09-4880666">
                 <span className="material-symbols-outlined">phone</span>
                 09-4880666
             </NavbarLink>

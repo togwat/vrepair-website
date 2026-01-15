@@ -23,6 +23,10 @@
   --colour-icon-orange-background: #FFEDD5;
   --colour-icon-purple: #9233EA;
   --colour-icon-purple-background: #F3E8FF;
+  --colour-icon-green: #16A34A;
+  --colour-icon-green-background: #dcfce7;
+
+  scroll-behavior: smooth;
 }
 
 body {

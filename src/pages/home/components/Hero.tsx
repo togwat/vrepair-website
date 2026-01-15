@@ -10,8 +10,8 @@ export default function Hero() {
         <header className="hero">
             <HeroBackground />
             <div className="hero-content">
-                <h1 className="hero-title">Main title Main Title Main title Main Title</h1>
-                <p className="hero-subtitle">This is a subtitle that describes the main title. This is a subtitle that describes the main title. This is a subtitle that describes the main title. This is a subtitle that describes the main title. This is a subtitle that describes the main title.</p>
+                <h1 className="hero-title">Expert Repair Services <span className="hero-title-coloured">You Can Trust.</span></h1>
+                <p className="hero-subtitle">Fast, professional repairs for phones, laptops, and electronic devices in Auckland. We bring your Apple, Android, and PC devices back to life. </p>
 
                 <div className="hero-buttons">
                     <BookingButton />
@@ -19,8 +19,8 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-verify-container">
-                    <HeroVerify text="Warranty Included" />
-                    <HeroVerify text="Warranty Included" />
+                    <HeroVerify text="Fully Operational" />
+                    <HeroVerify text="NZ-Registered Company" />
                     <HeroVerify text="Warranty Included" />
                 </div>
             </div>

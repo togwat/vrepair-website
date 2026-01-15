@@ -26,6 +26,13 @@
     margin-right: auto;
 }
 
+.hero-title-coloured {
+    /* gradient text */
+    background-image: linear-gradient(90deg, #FB923C, #EA580C);
+    color: transparent;
+    background-clip: text;
+}
+
 .hero-subtitle {
     font-size: 1.25rem;
     line-height: 1.75rem;

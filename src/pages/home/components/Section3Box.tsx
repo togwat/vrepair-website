@@ -13,18 +13,20 @@ export default function Section3Box() {
 
                 <Section3ListItem icon="call">
                     <h4>Phone Numbers</h4>
-                    <a className="transition-default" href="tel:">Shop: </a>
-                    <a className="transition-default" href="tel:">After-hours: </a>
+                    <a className="transition-default" href="tel:094880666">Shop: 09-4880666</a>
+                    <a className="transition-default" href="tel:0223735588">Mobile: 022-3735588</a>
                 </Section3ListItem>
 
                 <Section3ListItem icon="email">
                     <h4>Email Address</h4>
-                    <a className="transition-default" href="mailto:">info@vrepair.co.nz</a>
+                    <a className="transition-default" href="mailto:info@vrepair.co.nz">info@vrepair.co.nz</a>
                 </Section3ListItem>
 
                 <Section3ListItem icon="schedule">
                     <h4>Opening Hours</h4>
-                    <p>Mon-Fri: 9:30am - 5:30pm<br/>Sat: 10:00am - 4:00pm<br/>Sun: Closed</p>
+                    <p>Mon-Fri: 9:30am - 5:30pm</p>
+                    <p>Sat: 10:00am - 4:00pm</p>
+                    <p>Sun: Closed</p>
                 </Section3ListItem>
             </div>
             <div className="section3-box-right">
