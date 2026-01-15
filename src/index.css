@@ -15,6 +15,14 @@
   --colour-grey-700: #374151;
 
   --colour-green-500: #22C55E;
+  --colour-yellow-400: #FACC15;
+
+  --colour-icon-blue: #2564eb;
+  --colour-icon-blue-background: #DBEAFE;
+  --colour-icon-orange: #E55B18;
+  --colour-icon-orange-background: #FFEDD5;
+  --colour-icon-purple: #9233EA;
+  --colour-icon-purple-background: #F3E8FF;
 }
 
 body {

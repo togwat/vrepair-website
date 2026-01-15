@@ -1,0 +1,39 @@
+.section2 {
+    background-color: var(--colour-grey-50);
+
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2-text h2 {
+    margin: 0;
+}
+
+.section2-text h3 {
+    margin: 0;
+}
+
+.section2-text p {
+    color: var(--colour-grey-text-dark);
+}
+
+/* desktop (default css) */
+
+/* laptop */
+@media only screen and (max-width: 1280px) {
+} 
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+    .section2 {
+        flex-direction: column;
+    }
+}
+
+/* mobile, hide links behind burger */
+@media only screen and (max-width: 768px) {
+
+}
