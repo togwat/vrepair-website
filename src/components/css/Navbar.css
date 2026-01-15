@@ -32,8 +32,73 @@
     gap: 32px;
 }
 
+/* burger menu */
+/* Position and sizing of burger button */
+.navbar-menu .bm-burger-button {
+    position: relative;
+    width: 36px;
+    height: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.navbar-menu .bm-burger-bars {
+    background: var(--colour-grey-text-dark);
+}
+
+/* Position and sizing of clickable cross button */
+.navbar-menu .bm-cross-button {
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.navbar-menu .bm-cross {
+    background: var(--colour-grey-text-dark);
+}
+
+/* overlay cover entire screen */
+.navbar-menu .bm-overlay {
+    top: 0;
+    left: 0;
+    
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.navbar-menu .bm-menu-wrap {
+    top: 0;
+}
+
+.navbar-menu .bm-menu {
+    background: #FFF;
+    font-size: 1.15em;
+
+    padding-top: 2.15em;
+
+    height: auto !important;
+}
+
+.navbar-menu .bm-item-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-menu .bm-item-list .navbar-link {
+    padding: 0.65em 1.5em;
+
+
+    border-style: solid;
+    border-color: rgb(243 244 246);
+    border-width: 0px;
+    border-top-width: 1px;
+
+}
 
 /* desktop (default css) */
+.navbar-menu {
+    display: none;
+}
 
 /* laptop */
 @media only screen and (max-width: 1280px) {
@@ -53,7 +118,15 @@
 
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
+    .navbar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .navbar-links {
         display: none;
+    }
+    .navbar-menu {
+        display: block;
     }
 }
