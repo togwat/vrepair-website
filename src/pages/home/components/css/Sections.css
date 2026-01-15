@@ -1,4 +1,4 @@
-.section1, .section2 {
+.hero-content, .section1, .section2, .section3 {
     padding-top: 5rem;
     padding-bottom: 5rem;
 
@@ -33,7 +33,10 @@
 
 /* laptop */
 @media only screen and (max-width: 1280px) {
-
+    .section1, .section2, .section3 {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
 } 
 
 /* tablet */
@@ -44,6 +47,7 @@
     }
 
 }
+
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
 

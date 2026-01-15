@@ -1,0 +1,75 @@
+.section3-box {
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+    border-radius: 1.5rem;
+
+    overflow: hidden;
+}
+
+.section3-box h3 {
+    color: #FFF;
+
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;   /* extra-bold */
+
+    margin: 0;
+}
+
+.section3-box-left, .section3-box-right {
+    width: 50%;
+    padding: 4rem;
+
+    box-sizing: border-box;
+}
+
+.section3-box-left {
+    background-color: var(--colour-grey-text-black);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section3-box-right {
+    background-color: var(--colour-grey-100);
+}
+
+.section3-map {
+    border-width: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* desktop (default css) */
+
+/* laptop */
+@media only screen and (max-width: 1280px) {
+
+} 
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+    .section3-box {
+        flex-direction: column;
+    }
+
+    .section3-box-left, .section3-box-right {
+        width: 100%;
+    }
+
+    .section3-map {
+        height: 20rem;
+    }
+}
+
+/* mobile, hide links behind burger */
+@media only screen and (max-width: 768px) {
+    .section3-box-right {
+        padding: 2rem;
+    }
+}

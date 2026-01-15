@@ -1,0 +1,45 @@
+.section3-list-item {
+    color: #FFF;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.section3-list-item-content h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;   /* bold */
+
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
+.section3-list-item-content a, .section3-list-item-content p {
+    text-decoration: none;
+    color: var(--colour-grey-text-light);
+    margin: 0;
+}
+
+.section3-list-item-content a:hover {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.section3-list-item-icon {
+    color: var(--colour-icon-orange);
+    background-color: rgb(255 255 255 / 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 0.5rem;
+}
+
+.section3-list-item-icon span {    /* actual icon */
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
