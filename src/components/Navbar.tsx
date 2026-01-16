@@ -7,7 +7,7 @@ import './css/Navbar.css'
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <Logo />
+            <a href="/"><Logo /></a>
             <div className="navbar-links">
                 <NavbarLink link="/#services">Services</NavbarLink>
                 <NavbarLink link="/booking">Booking</NavbarLink>
