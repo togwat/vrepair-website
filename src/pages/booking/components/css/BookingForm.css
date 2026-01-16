@@ -1,0 +1,106 @@
+.booking-form {
+    background-color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--colour-grey-100);
+    border-radius: 1rem;
+
+    padding: 2.5rem;
+    width: 50%;
+
+}
+
+.booking-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking-form label {
+    text-transform: uppercase;
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: var(--colour-grey-text-dark)
+}
+
+.booking-form input, textarea {
+    font: inherit;
+    font-size: 1rem;
+
+    background-color: var(--colour-grey-50);
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--colour-grey-200);
+    border-radius: 0.5rem;
+
+    resize: none;
+
+    outline: none;  /* handled by box shadow instead */
+
+    padding: 0.5rem 1rem;
+}
+
+.booking-form textarea {
+    height: 5rem; /* 4 lines */
+}
+
+.booking-form input:focus, textarea:focus {
+    border-color: #137FEC;
+     box-shadow: 0 0 0 2px #D0E5FB;
+
+}
+
+#contact-details.booking-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.booking-form-submit {
+    font: inherit;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: #FFF;
+
+    background-color: var(--colour-accent);
+
+    border-style: none;
+    border-radius: 0.75rem;
+
+    box-shadow: 0 10px 15px -3px var(--colour-accent-shadow);
+
+    height: 3.5rem;
+}
+
+.booking-form-submit:hover {
+    background-color: var(--colour-accent-hover);
+}
+
+/* desktop (default css) */
+
+/* laptop */
+@media only screen and (max-width: 1280px) {
+} 
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+    .booking-form {
+        width: 100%;
+    }
+}
+
+/* mobile, hide links behind burger */
+@media only screen and (max-width: 768px) {
+
+}

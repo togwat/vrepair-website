@@ -16,9 +16,7 @@
     display: flex;
     align-items: center;
 
-    --shadow-colour: rgba(249, 115, 22, 0.3);
-
-    box-shadow: 0 10px 8px -3px var(--shadow-colour), 0 4px 6px -4px var(--shadow-colour);
+    box-shadow: 0 10px 8px -3px var(--colour-accent-shadow), 0 4px 6px -4px var(--colour-accent-shadow);
 }
 
 .navbar-call .navbar-link:hover {

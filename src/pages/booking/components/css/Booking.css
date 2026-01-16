@@ -1,0 +1,53 @@
+.main-section {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+
+    padding-left: var(--body-padding-default);
+    padding-right: var(--body-padding-default);
+
+    background-color: var(--colour-grey-50);
+
+    display: flex;
+    gap: 4rem;
+}
+
+.booking-text {
+    width: 50%;
+}
+
+.booking-text h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.booking-text p {
+    color: var(--colour-grey-text-dark);
+}
+
+/* desktop (default css) */
+
+/* laptop */
+@media only screen and (max-width: 1280px) {
+    .main-section {
+        padding-left: var(--body-padding-laptop);
+        padding-right: var(--body-padding-laptop);
+    }
+} 
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .booking-text {
+        width: 100%;
+    }
+}
+
+/* mobile, hide links behind burger */
+@media only screen and (max-width: 768px) {
+
+}
