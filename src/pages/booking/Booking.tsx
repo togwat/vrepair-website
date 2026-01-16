@@ -12,7 +12,7 @@ export default function Booking() {
             <section className="main-section">
                 <div className="booking-text">
                     <h1>Book a Repair Request</h1>
-                    <p>Fill out fill out fill out fill out fill out. Fill out fill out fill out, fill out fill out fill out. Fill out fill out fill out fill out fill out. Fill out fill out fill out, fill out fill out fill out.</p>
+                    <p>We will reply via email for followup details.</p>
                 </div>
                 <BookingForm />
             </section>

@@ -13,7 +13,6 @@
     border-radius: 1rem;
 
     padding: 2.5rem;
-    width: 50%;
 
 }
 
@@ -87,6 +86,11 @@
     background-color: var(--colour-accent-hover);
 }
 
+.required:after {
+    content:" *";
+    color: red;
+  }
+
 /* desktop (default css) */
 
 /* laptop */
@@ -95,12 +99,16 @@
 
 /* tablet */
 @media only screen and (max-width: 1024px) {
-    .booking-form {
-        width: 100%;
-    }
+
 }
 
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
+    .booking-form {
+        min-width: 80%;
+    }
 
+    #contact-details.booking-form-row {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }

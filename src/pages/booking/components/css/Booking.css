@@ -1,5 +1,5 @@
 .main-section {
-    padding-top: 12rem;
+    padding-top: 8rem;
     padding-bottom: 8rem;
 
     padding-left: var(--body-padding-default);
@@ -8,15 +8,17 @@
     background-color: var(--colour-grey-50);
 
     display: flex;
-    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .booking-text {
-    width: 50%;
+    text-align: center;
 }
 
 .booking-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
@@ -40,10 +42,6 @@
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-    }
-
-    .booking-text {
-        width: 100%;
     }
 }
 
