@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar'
-import Footer from '../home/components/Footer'
+import Footer from '../../components/Footer'
 import BookingForm from './components/BookingForm'
 import './components/css/Booking.css'
 
