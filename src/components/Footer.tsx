@@ -1,5 +1,4 @@
 import './css/Footer.css'
-import './css/Sections.css'
 
 export default function Footer() {
     return (

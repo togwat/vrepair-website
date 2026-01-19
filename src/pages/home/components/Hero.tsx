@@ -1,6 +1,6 @@
 import BookingButton from './BookingButton'
-import './css/Hero.css'
 import './css/Sections.css'
+import './css/Hero.css'
 import HeroBackground from './HeroBackground'
 import HeroButton from './HeroButton'
 import HeroVerify from './HeroVerify'
