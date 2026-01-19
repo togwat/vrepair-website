@@ -86,10 +86,29 @@
     background-color: var(--colour-accent-hover);
 }
 
+.booking-form-submit:disabled {
+    content: "Submitting...";
+    color: var(--colour-grey-text-light);
+    background-color: var(--colour-accent-hover);
+}
+
 .required:after {
     content:" *";
     color: red;
-  }
+}
+
+.booking-form-result {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.booking-form-result--success {
+    color: green;
+}
+
+.booking-form-result--error {
+    color: red;
+}
 
 /* desktop (default css) */
 

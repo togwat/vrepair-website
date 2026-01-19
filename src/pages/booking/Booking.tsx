@@ -12,7 +12,7 @@ export default function Booking() {
             <section className="main-section">
                 <div className="booking-text">
                     <h1>Book a Repair Request</h1>
-                    <p>We will reply via email for followup details.</p>
+                    <p>This form will be submitted through our internal system. We will reply via email for followup details.</p>
                 </div>
                 <BookingForm />
             </section>
