@@ -15,7 +15,7 @@ export default function Hero() {
 
                 <div className="hero-buttons">
                     <BookingButton />
-                    <HeroButton link="todo">View Services</HeroButton>
+                    <HeroButton link="#services">View Services</HeroButton>
                 </div>
 
                 <div className="hero-verify-container">
