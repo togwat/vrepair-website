@@ -32,7 +32,8 @@ export default function BookingForm() {
 
         Device: ${device}
         
-        Problem: ${problem}
+        Problem: 
+        ${problem}
         `;
 
         try {
@@ -84,11 +85,11 @@ export default function BookingForm() {
             </div>
             <div className="booking-form-field booking-form-row">
                 <label htmlFor="device" className="required">Device type</label>
-                <input className="transition-default" type="text" name="device" id="device" required />
+                <input className="transition-default" type="text" name="device" id="device" placeholder="(e.g. iPhone 15, Dell laptop...)" required />
             </div>
             <div className="booking-form-field booking-form-row">
                 <label htmlFor="problem" className="required">Problem description</label>
-                <textarea className="transition-default" name="problem" id="problem" placeholder="Describe the issue (e.g., cracked screen, battery drain, won't turn on...)" required />
+                <textarea className="transition-default" name="problem" id="problem" placeholder="Describe the issue (e.g. cracked screen, battery drain, won't turn on...)" required />
             </div>
             <button className="booking-form-submit transition-default" type="submit" disabled={submitting}>
                 {submitting
