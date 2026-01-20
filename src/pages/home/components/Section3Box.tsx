@@ -8,7 +8,7 @@ export default function Section3Box() {
                 <h3>Visit Us In-Store</h3>
                 <Section3ListItem icon="storefront">
                     <h4>Physical Address</h4>
-                    <a className="transition-default" href="https://www.google.com/maps/place/E+Store/@-36.7722017,174.7642281,151m/data=!3m1!1e3!4m16!1m9!3m8!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!2sE+Store!8m2!3d-36.7723341!4d174.7643282!9m1!1b1!16s%2Fg%2F11cjkgqmwt!3m5!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!8m2!3d-36.7723341!4d174.7643282!16s%2Fg%2F11cjkgqmwt?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">3/145 Kitchener Road, Milford 0632, Auckland</a>
+                    <a className="transition-default" href="https://www.google.com/maps/place/E+Store/@-36.7722017,174.7642281,151m/data=!3m1!1e3!4m16!1m9!3m8!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!2sE+Store!8m2!3d-36.7723341!4d174.7643282!9m1!1b1!16s%2Fg%2F11cjkgqmwt!3m5!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!8m2!3d-36.7723341!4d174.7643282!16s%2Fg%2F11cjkgqmwt?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">3/145 Kitchener Road, Milford, Auckland 0620</a>
                 </Section3ListItem>
 
                 <Section3ListItem icon="call">
