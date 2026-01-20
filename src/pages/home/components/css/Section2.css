@@ -25,13 +25,14 @@
 
 /* laptop */
 @media only screen and (max-width: 1280px) {
+    .section2 {
+        flex-direction: column;
+    }
 } 
 
 /* tablet */
 @media only screen and (max-width: 1024px) {
-    .section2 {
-        flex-direction: column;
-    }
+
 }
 
 /* mobile, hide links behind burger */
