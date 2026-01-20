@@ -1,0 +1,6 @@
+.about-section {
+    padding-top: 8rem;
+
+    padding-left: var(--body-padding-default);
+    padding-right: var(--body-padding-default);
+}

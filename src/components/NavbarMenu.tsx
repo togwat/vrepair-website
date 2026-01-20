@@ -24,7 +24,7 @@ export default function NavbarMenu() {
             <Menu right onOpen={handleOpen} onClose={handleClose} isOpen={isOpen}>
                 <NavbarLink link="/#services" onClick={handleClose}>Services</NavbarLink>
                 <NavbarLink link="/booking">Booking</NavbarLink>
-                <NavbarLink link="#todo">About</NavbarLink>
+                <NavbarLink link="/about">About</NavbarLink>
             </Menu>
         </div>     
     )

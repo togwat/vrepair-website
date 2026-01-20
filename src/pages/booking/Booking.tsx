@@ -9,7 +9,7 @@ export default function Booking() {
     return (
         <>
             <Navbar />
-            <section className="main-section">
+            <section className="booking-section">
                 <div className="booking-text">
                     <h1>Book a Repair Request</h1>
                     <p>This form will be submitted through our internal system. We will reply via email for followup details.</p>
