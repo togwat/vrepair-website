@@ -2,8 +2,7 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
 
-    padding-left: var(--body-padding-default);
-    padding-right: var(--body-padding-default);
+    padding-inline: var(--body-padding-default);
 
     background-color: var(--colour-grey-50);
 
@@ -30,10 +29,7 @@
 
 /* laptop */
 @media only screen and (max-width: 1280px) {
-    .main-section {
-        padding-left: var(--body-padding-laptop);
-        padding-right: var(--body-padding-laptop);
-    }
+
 } 
 
 /* tablet */

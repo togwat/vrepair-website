@@ -2,8 +2,7 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 
-    padding-left: var(--body-padding-default);
-    padding-right: var(--body-padding-default);
+    padding-inline: var(--body-padding-default);
 }
 
 .section1-text h2, .section2-text h2 {
@@ -33,10 +32,7 @@
 
 /* laptop */
 @media only screen and (max-width: 1280px) {
-    .section1, .section2, .section3 {
-        padding-left: var(--body-padding-laptop);
-        padding-right: var(--body-padding-laptop);
-    }
+
 } 
 
 /* tablet */

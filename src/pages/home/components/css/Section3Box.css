@@ -49,11 +49,6 @@
 
 /* laptop */
 @media only screen and (max-width: 1280px) {
-
-} 
-
-/* tablet */
-@media only screen and (max-width: 1024px) {
     .section3-box {
         flex-direction: column;
     }
@@ -65,6 +60,11 @@
     .section3-map {
         height: 20rem;
     }
+} 
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+
 }
 
 /* mobile, hide links behind burger */

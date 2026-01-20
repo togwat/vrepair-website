@@ -9,7 +9,7 @@ footer {
     color: var(--colour-grey-text-dark);
 
     margin: 0;
-    padding: 1rem 12rem;
+    padding: 1rem var(--body-padding-default);
 
     text-align: right;
 }
