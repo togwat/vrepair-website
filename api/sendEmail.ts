@@ -4,6 +4,12 @@ import express from 'express'
 import type { Request, Response } from 'express'
 import cors from 'cors'
 
+// alternative import
+const nodemailer = require("nodemailer");
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+
 const app = express();
 app.use(express.json());
 
@@ -57,6 +63,6 @@ app.post("/api/send-email", async (req: Request, res: Response) => {
 	}
 });
 
-app.listen(process.env.port, () => {
-	console.log(`Email API listening on port ${process.env.port}`);
+app.listen(process.env.PORT, () => {
+	console.log(`Email API listening on port ${process.env.PORT}`);
 });
