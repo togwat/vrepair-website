@@ -51,7 +51,7 @@ export default function BookingForm() {
     }
 
     async function sendBookingMail(subject: string, text: string) {
-        const response = await fetch("http://localhost:3001/api/send-email", {
+        const response = await fetch("/api/send-email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

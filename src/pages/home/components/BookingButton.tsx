@@ -5,7 +5,7 @@ export default function BookingButton() {
     return (
         <div className="booking-button">
             <HeroButton link="/booking">
-                Book a Repair
+                Request a Quote
                 <span className="material-symbols-outlined">arrow_forward</span>
             </HeroButton>
         </div>
