@@ -43,5 +43,7 @@
 
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
-
+    .booking-section {
+        padding-top: 6rem;
+    }
 }

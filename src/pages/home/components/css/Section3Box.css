@@ -69,7 +69,12 @@
 
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
-    .section3-box-right {
-        padding: 2rem;
+    .section3-box {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .section3-box-left, .section3-box-right {
+        padding-inline: var(--body-padding-default);
     }
 }

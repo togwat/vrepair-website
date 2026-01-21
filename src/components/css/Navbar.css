@@ -7,7 +7,7 @@
 
     box-sizing: border-box; /* no x-axis overflow */
 
-    width: 100%;
+    width: 100vw;
     height: 80px;
 
     display: flex;
@@ -18,7 +18,7 @@
     border-width: 0 0 1px 0;    /* bottom border */
     border-color: var(--colour-grey-100);
     
-    padding-inline: clamp(4rem, 10vw, 12rem);
+    padding-inline: clamp(2rem, 10vw, 12rem);
     margin-left: auto;
     margin-right: auto;
 
@@ -114,5 +114,9 @@
     }
     .navbar-menu {
         display: block;
+    }
+
+    .navbar {
+        height: 53px;   /* same ratio as logo */
     }
 }

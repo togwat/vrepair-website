@@ -1,53 +1,59 @@
 :root {
-  font-family: Inter, sans-serif;
+	font-family: Inter, sans-serif;
 
-  /* constants */
-  /* colours */
-  --colour-accent: #E55B18;
-  --colour-accent-hover: #B74913;
-  --colour-accent-shadow: rgba(249, 115, 22, 0.3);
+	/* constants */
+	/* colours */
+	--colour-accent: #E55B18;
+	--colour-accent-hover: #B74913;
+	--colour-accent-shadow: rgba(249, 115, 22, 0.3);
 
-  --colour-grey-text-black: #111827;
-  --colour-grey-text-dark: #4B5563;
-  --colour-grey-text-light: #D1D5DB;
-  
-  --colour-grey-50: #F9FAFB;
-  --colour-grey-100: #F3F4F6;
-  --colour-grey-200: #E6E8EA;
-  --colour-grey-400: #9CA3AF;
-  --colour-grey-700: #374151;
+	--colour-grey-text-black: #111827;
+	--colour-grey-text-dark: #4B5563;
+	--colour-grey-text-light: #D1D5DB;
 
-  --colour-green-500: #22C55E;
-  --colour-yellow-400: #FACC15;
+	--colour-grey-50: #F9FAFB;
+	--colour-grey-100: #F3F4F6;
+	--colour-grey-200: #E6E8EA;
+	--colour-grey-400: #9CA3AF;
+	--colour-grey-700: #374151;
 
-  --colour-icon-blue: #2564eb;
-  --colour-icon-blue-background: #DBEAFE;
-  --colour-icon-orange: #E55B18;
-  --colour-icon-orange-background: #FFEDD5;
-  --colour-icon-purple: #9233EA;
-  --colour-icon-purple-background: #F3E8FF;
-  --colour-icon-green: #16A34A;
-  --colour-icon-green-background: #dcfce7;
+	--colour-green-500: #22C55E;
+	--colour-yellow-400: #FACC15;
 
-  /* main body margin/padding */
-  --body-padding-default: clamp(1rem, 20vw, 24rem);
+	--colour-icon-blue: #2564eb;
+	--colour-icon-blue-background: #DBEAFE;
+	--colour-icon-orange: #E55B18;
+	--colour-icon-orange-background: #FFEDD5;
+	--colour-icon-purple: #9233EA;
+	--colour-icon-purple-background: #F3E8FF;
+	--colour-icon-green: #16A34A;
+	--colour-icon-green-background: #dcfce7;
 
-  scroll-behavior: smooth;
+	/*	main body margin/padding
+		20vw at widest (>= 1920px), 5vw at narrowest (<= 428px)
+		padding = A * vw + B * px
+		A = 24.303
+		B = 82.617
+	*/
+
+	--body-padding-default: clamp(5vw, calc(24.303vw - 82.617px), 20vw);
+
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+  	margin: 0;
   
-  min-width: 320px;
-  max-width: 100vw;
-  min-height: 100vh;
+  	min-width: 320px;
+  	max-width: 100vw;
+  	min-height: 100vh;
 
-  overflow-x: hidden;
+	overflow-x: hidden;
 
-  color: var(--colour-grey-text-black);
+  	color: var(--colour-grey-text-black);
 }
 
 .transition-default {
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
+  	transition-duration: 150ms;
+  	transition-timing-function: ease-in-out;
 }

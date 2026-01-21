@@ -1,0 +1,18 @@
+/* desktop (default css) */
+
+/* laptop */
+@media only screen and (max-width: 1280px) {
+
+} 
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* mobile, hide links behind burger */
+@media only screen and (max-width: 768px) {
+    .section3 {
+        padding: 0;
+    }
+}

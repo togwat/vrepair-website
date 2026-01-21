@@ -83,6 +83,10 @@
 
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
+    .hero-content {
+        padding-top: 8rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
     }
