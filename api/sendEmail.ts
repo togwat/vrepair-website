@@ -4,12 +4,6 @@ import express from 'express'
 import type { Request, Response } from 'express'
 import cors from 'cors'
 
-// alternative import
-const nodemailer = require("nodemailer");
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
-
 const app = express();
 app.use(express.json());
 

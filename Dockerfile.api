@@ -1,0 +1,31 @@
+# API Dockerfile - builds the TypeScript API and runs it in Node 24
+FROM node:24-alpine AS builder
+WORKDIR /app
+
+# Install all deps (including dev deps for TypeScript)
+COPY package*.json tsconfig*.json ./
+RUN npm ci --silent
+
+COPY . .
+
+# Compile only the API TypeScript file to ESM-compatible JS for Node 24
+# Use `nodenext` so emitted JS uses ESM imports/exports (compatible with "type": "module")
+RUN npx tsc api/sendEmail.ts \
+	--outDir dist/api \
+	--module nodenext \
+	--moduleResolution nodenext \
+	--target ES2020 \
+	--esModuleInterop true
+
+# Runtime image with only production deps
+FROM node:24-alpine AS runner
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci --silent
+
+COPY --from=builder /app/dist/api ./dist/api
+
+ENV PORT=3001
+EXPOSE 3001
+CMD ["node", "dist/api/sendEmail.js"]
