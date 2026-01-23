@@ -10,7 +10,7 @@ docker build -t vrepair-website .
 Run container (port 80, web only):
 
 ```bash
-docker run --rm -p 80:80 vrepair-website
+docker run --rm -p 8081:80 vrepair-website
 ```
 
 Or with docker-compose (web + API):
