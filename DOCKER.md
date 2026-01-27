@@ -44,3 +44,23 @@ The API reads credentials and allowed origins from an environment file. Create a
 - `CORS_ORIGIN_DEV`
 - `CORS_ORIGIN_PROD`
 - (optional) `PORT` — defaults to `3001` inside the container
+
+## Setting up reverse proxy on Apache
+If Apache occupies port 80, it is recommended that Apache be used to reverse proxy to the Docker container port 8081. Docker remains HTTP.
+
+Turn on ProxyPreserveHost:
+```
+sudo a2enmod proxy proxy_http
+sudo systemctl restart apache2
+```
+
+In Apache conf file in `/etc/apache2/sites-available`, add:
+```
+ProxyPreserveHost On
+# API
+ProxyPass /api http://127.0.0.1:3001/api
+ProxyPassReverse /api http://127.0.0.1:3001/api
+# web
+ProxyPass / http://127.0.0.1:8081/
+ProxyPassReverse / http://127.0.0.1:8081/
+```
