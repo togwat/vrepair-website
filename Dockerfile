@@ -6,6 +6,9 @@ RUN npm ci --silent
 COPY . .
 RUN npm run build
 
+# move favicon into the dist folder
+RUN if [ -f ./favicon.ico ]; then cp ./favicon.ico ./dist/; fi
+
 FROM nginx:stable-alpine
 # Remove default nginx static content
 RUN rm -rf /usr/share/nginx/html/*

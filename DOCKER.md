@@ -16,7 +16,7 @@ docker run --rm -p 8081:80 vrepair-website
 Or with docker-compose (web + API):
 
 ```bash
-docker compose up --build
+docker compose up --build -d
 ```
 
 ## Email API (separate container)
@@ -26,7 +26,7 @@ The email API runs in its own container. The repo includes `Dockerfile.api` whic
 Build and start both services (web + API):
 
 ```bash
-docker compose up --build
+docker compose up --build -d
 ```
 
 Start only the API service:
