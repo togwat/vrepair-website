@@ -31,8 +31,9 @@ const transporter = nodemailer.createTransport({
 // api endpoint
 app.post("/api/send-email", async (req: Request, res: Response) => {
 	try {
-		const subject = req.body?.subject;
-		const text = req.body?.text;
+		const senderEmail = req.body.senderEmail;
+		const subject = req.body.subject;
+		const text = req.body.text;
 
 		// verifies SMTP config is reachable
 		await transporter.verify();
@@ -42,6 +43,7 @@ app.post("/api/send-email", async (req: Request, res: Response) => {
 			to: process.env.EMAIL_USER,
 			subject,
 			text,
+			replyTo: senderEmail,	// can reply to the original sender
 		});
 
 		return res.json({ 

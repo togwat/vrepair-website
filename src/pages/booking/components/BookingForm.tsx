@@ -18,13 +18,13 @@ export default function BookingForm() {
         // check if all required fields are filled
         const form = new FormData(e.currentTarget);
 
-        const name = form.get("name")?.toString().trim();
-        const email = form.get("email")?.toString().trim();
-        const phone = form.get("phone")?.toString().trim();
-        const device = form.get("device")?.toString().trim();
+        const name = form.get("name")!.toString().trim();
+        const email = form.get("email")!.toString().trim();
+        const phone = form.get("phone")!.toString().trim();
+        const device = form.get("device")!.toString().trim();
         const problem = form.get("problem")?.toString().trim();
 
-        const emailSubject = `Website repair request: ${name}`;
+        const emailSubject = `Repair request: ${device}`;
         const emailText = `
         Name: ${name}
         Email: ${email}
@@ -37,7 +37,7 @@ export default function BookingForm() {
         `;
 
         try {
-            const response = await sendBookingMail(emailSubject, emailText);
+            const response = await sendBookingMail(email, emailSubject, emailText);
 
             console.log(response);
             setSubmitResult({ type: "success" });
@@ -50,11 +50,12 @@ export default function BookingForm() {
         setSubmitting(false);
     }
 
-    async function sendBookingMail(subject: string, text: string) {
+    async function sendBookingMail(senderEmail: string, subject: string, text: string) {
         const response = await fetch("/api/send-email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
+                senderEmail,
                 subject,
                 text,
             }),
