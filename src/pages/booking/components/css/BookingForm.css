@@ -1,9 +1,5 @@
-.booking-form {
+.booking-form-container {
     background-color: #FFF;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
 
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 
@@ -14,6 +10,13 @@
 
     padding: 2.5rem;
 
+    width: 36rem;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .booking-form-field {
@@ -123,8 +126,8 @@
 
 /* mobile, hide links behind burger */
 @media only screen and (max-width: 768px) {
-    .booking-form {
-        min-width: 80%;
+    .booking-form-container {
+        width: 80%;
     }
 
     #contact-details.booking-form-row {

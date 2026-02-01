@@ -69,35 +69,37 @@ export default function BookingForm() {
     }
 
     return (
-        <form className="booking-form" onSubmit={handleSubmit}>
-            <div className="booking-form-field booking-form-row">
-                <label htmlFor="name" className="required">Name</label>
-                <input className="transition-default" type="text" name="name" id="name" required />
-            </div>
-            <div className="booking-form-row" id="contact-details">
-                <div className="booking-form-field">
-                    <label htmlFor="email" className="required">Email address</label>
-                    <input className="transition-default" type="email" name="email" id="email" required />
+        <div className="booking-form-container">
+            <form className="booking-form" onSubmit={handleSubmit}>
+                <div className="booking-form-field booking-form-row">
+                    <label htmlFor="name" className="required">Name</label>
+                    <input className="transition-default" type="text" name="name" id="name" required />
                 </div>
-                <div className="booking-form-field">
-                    <label htmlFor="phone">Phone number</label>
-                    <input className="transition-default" type="tel" name="phone" id="phone" />
+                <div className="booking-form-row" id="contact-details">
+                    <div className="booking-form-field">
+                        <label htmlFor="email" className="required">Email address</label>
+                        <input className="transition-default" type="email" name="email" id="email" required />
+                    </div>
+                    <div className="booking-form-field">
+                        <label htmlFor="phone">Phone number</label>
+                        <input className="transition-default" type="tel" name="phone" id="phone" />
+                    </div>
                 </div>
-            </div>
-            <div className="booking-form-field booking-form-row">
-                <label htmlFor="device" className="required">Device type</label>
-                <input className="transition-default" type="text" name="device" id="device" placeholder="(e.g. iPhone 15, Dell laptop...)" required />
-            </div>
-            <div className="booking-form-field booking-form-row">
-                <label htmlFor="problem" className="required">Problem description</label>
-                <textarea className="transition-default" name="problem" id="problem" placeholder="Describe the issue (e.g. cracked screen, battery drain, won't turn on...)" required />
-            </div>
-            <button className="booking-form-submit transition-default" type="submit" disabled={submitting}>
-                {submitting
-                    ? "Submitting..."
-                    : "Submit repair request"
-                }
-            </button>
+                <div className="booking-form-field booking-form-row">
+                    <label htmlFor="device" className="required">Device type</label>
+                    <input className="transition-default" type="text" name="device" id="device" placeholder="(e.g. iPhone 15, Dell laptop...)" required />
+                </div>
+                <div className="booking-form-field booking-form-row">
+                    <label htmlFor="problem" className="required">Problem description</label>
+                    <textarea className="transition-default" name="problem" id="problem" placeholder="Describe the issue (e.g. cracked screen, battery drain, won't turn on...)" required />
+                </div>
+                <button className="booking-form-submit transition-default" type="submit" disabled={submitting}>
+                    {submitting
+                        ? "Submitting..."
+                        : "Submit repair request"
+                    }
+                </button>
+            </form>
 
             {submitResult && (
                 <p className={`booking-form-result 
@@ -112,6 +114,6 @@ export default function BookingForm() {
                     }
                 </p>
             )}
-        </form>
+        </div>
     )
 }
