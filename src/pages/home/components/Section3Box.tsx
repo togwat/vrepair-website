@@ -1,5 +1,6 @@
 import './css/Section3Box.css'
 import Section3ListItem from './Section3ListItem'
+import { OPENING_HOURS } from '../../../constants/OpeningHours'
 
 export default function Section3Box() {
     return (
@@ -24,9 +25,9 @@ export default function Section3Box() {
 
                 <Section3ListItem icon="schedule">
                     <h4>Opening Hours</h4>
-                    <p>Mon-Fri: 9:30am - 5:30pm</p>
-                    <p>Sat: 10:00am - 4:00pm</p>
-                    <p>Sun: Closed</p>
+                    <p>Mon-Fri: {OPENING_HOURS.monToFri}</p>
+                    <p>Sat: {OPENING_HOURS.sat}</p>
+                    <p>Sun: {OPENING_HOURS.sun}</p>
                 </Section3ListItem>
             </div>
             <div className="section3-box-right">
