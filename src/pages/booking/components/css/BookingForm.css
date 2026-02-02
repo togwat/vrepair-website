@@ -101,7 +101,7 @@
 }
 
 .booking-form-result {
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -111,6 +111,31 @@
 
 .booking-form-result--error {
     color: red;
+}
+
+.submit-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.submit-result-text {
+    text-align: center;
+}
+
+.submit-result-return {
+    display: inline-block;
+
+    text-decoration: none;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 /* desktop (default css) */

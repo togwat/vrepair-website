@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './css/BookingForm.css'
+import { OPENING_HOURS } from '../../../constants/OpeningHours'
 
 export default function BookingForm() {
     // disable submission button when already submitting
@@ -9,6 +10,11 @@ export default function BookingForm() {
         | { type: "error" }
         | null
     >(null);
+    const [showForm, setShowForm] = useState(true);
+
+    const hideForm = () => {
+        setShowForm(false);
+    }
 
     async function handleSubmit(e: React.ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -46,7 +52,7 @@ export default function BookingForm() {
             console.log(errorMessage)
             setSubmitResult({type: "error" });
         }
-        
+        hideForm();
         setSubmitting(false);
     }
 
@@ -70,50 +76,64 @@ export default function BookingForm() {
 
     return (
         <div className="booking-form-container">
-            <form className="booking-form" onSubmit={handleSubmit}>
-                <div className="booking-form-field booking-form-row">
-                    <label htmlFor="name" className="required">Name</label>
-                    <input className="transition-default" type="text" name="name" id="name" required />
-                </div>
-                <div className="booking-form-row" id="contact-details">
-                    <div className="booking-form-field">
-                        <label htmlFor="email" className="required">Email address</label>
-                        <input className="transition-default" type="email" name="email" id="email" required />
+            {showForm && (
+                <form className="booking-form" onSubmit={handleSubmit}>
+                    <div className="booking-form-field booking-form-row">
+                        <label htmlFor="name" className="required">Name</label>
+                        <input className="transition-default" type="text" name="name" id="name" required />
                     </div>
-                    <div className="booking-form-field">
-                        <label htmlFor="phone">Phone number</label>
-                        <input className="transition-default" type="tel" name="phone" id="phone" />
+                    <div className="booking-form-row" id="contact-details">
+                        <div className="booking-form-field">
+                            <label htmlFor="email" className="required">Email address</label>
+                            <input className="transition-default" type="email" name="email" id="email" required />
+                        </div>
+                        <div className="booking-form-field">
+                            <label htmlFor="phone">Phone number</label>
+                            <input className="transition-default" type="tel" name="phone" id="phone" />
+                        </div>
                     </div>
-                </div>
-                <div className="booking-form-field booking-form-row">
-                    <label htmlFor="device" className="required">Device type</label>
-                    <input className="transition-default" type="text" name="device" id="device" placeholder="(e.g. iPhone 15, Dell laptop...)" required />
-                </div>
-                <div className="booking-form-field booking-form-row">
-                    <label htmlFor="problem" className="required">Problem description</label>
-                    <textarea className="transition-default" name="problem" id="problem" placeholder="Describe the issue (e.g. cracked screen, battery drain, won't turn on...)" required />
-                </div>
-                <button className="booking-form-submit transition-default" type="submit" disabled={submitting}>
-                    {submitting
-                        ? "Submitting..."
-                        : "Submit repair request"
-                    }
-                </button>
-            </form>
-
-            {submitResult && (
-                <p className={`booking-form-result 
-                    ${submitResult.type === "success"
-                        ? "booking-form-result--success"
-                        : "booking-form-result--error"}`
-                    }
-                >
-                    {submitResult.type === "success"
-                        ? "Request submitted successfully."
-                        : "Error during submission. Please contact us directly or visit us for repairs."
-                    }
-                </p>
+                    <div className="booking-form-field booking-form-row">
+                        <label htmlFor="device" className="required">Device type</label>
+                        <input className="transition-default" type="text" name="device" id="device" placeholder="(e.g. iPhone 15, Dell laptop...)" required />
+                    </div>
+                    <div className="booking-form-field booking-form-row">
+                        <label htmlFor="problem" className="required">Problem description</label>
+                        <textarea className="transition-default" name="problem" id="problem" placeholder="Describe the issue (e.g. cracked screen, battery drain, won't turn on...)" required />
+                    </div>
+                    <button className="booking-form-submit transition-default" type="submit" disabled={submitting}>
+                        {submitting
+                            ? "Submitting..."
+                            : "Submit repair request"
+                        }
+                    </button>
+                </form>
             )}
+            {!showForm && (
+                <div className="submit-result">
+                    {submitResult && (
+                        <p className={`booking-form-result 
+                            ${submitResult.type === "success"
+                                ? "booking-form-result--success"
+                                : "booking-form-result--error"}`
+                            }
+                        >
+                            {submitResult.type === "success"
+                                ? "Repair/quote request submitted successfully. Our technician will contact you via email soon."
+                                : "Error during submission. Please contact us directly or visit us for repairs."
+                            }
+                        </p>
+                    )}
+
+                    <div className="submit-result-text">
+                        <p>Our opening hours:</p>
+                        <p><strong>Mon-Fri: </strong>{OPENING_HOURS.monToFri}</p>
+                        <p><strong>Sat: </strong>{OPENING_HOURS.sat}</p>
+                        <p><strong>Sun: </strong>{OPENING_HOURS.sun}</p>
+                    </div>
+
+                    <a className="submit-result-return booking-form-submit transition-default" href="/">Return to home</a>
+                </div>
+            )}      
         </div>
     )
 }
