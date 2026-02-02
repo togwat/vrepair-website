@@ -11,6 +11,7 @@ export default function BookingForm() {
         | null
     >(null);
     const [showForm, setShowForm] = useState(true);
+    const [senderEmail, setSenderEmail] = useState(""); // for message display after submission
 
     const hideForm = () => {
         setShowForm(false);
@@ -47,6 +48,7 @@ export default function BookingForm() {
 
             console.log(response);
             setSubmitResult({ type: "success" });
+            setSenderEmail(email);
         } catch (err: any) {
             const errorMessage = `Error on submit: ${err?.response || err?.message}`;
             console.log(errorMessage)
@@ -117,10 +119,13 @@ export default function BookingForm() {
                                 : "booking-form-result--error"}`
                             }
                         >
-                            {submitResult.type === "success"
-                                ? "Repair/quote request submitted successfully. Our technician will contact you via email soon."
-                                : "Error during submission. Please contact us directly or visit us for repairs."
-                            }
+                            {submitResult.type === "success" ? (
+                                <>
+                                    Repair/quote request submitted successfully. Our technician will reply to <span>{senderEmail}</span> soon.
+                                </>
+                            ) : (
+                                "Error during submission. Please contact us directly or visit us for repairs."
+                            )}
                         </p>
                     )}
 

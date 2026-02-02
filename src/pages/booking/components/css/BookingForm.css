@@ -113,6 +113,11 @@
     color: red;
 }
 
+.booking-form-result span {
+    font-weight: 700;
+    color: var(--colour-grey-text-black);
+}
+
 .submit-result {
     display: flex;
     flex-direction: column;
