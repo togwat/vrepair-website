@@ -22,7 +22,7 @@ export default function Section2() {
 
                 <Section2ListItem accentColour1="var(--colour-icon-orange)" accentColour2="var(--colour-icon-orange-background)" icon="verified_user">
                     <h4>Solid Warranty</h4>
-                    <p>We offer 3 Months Warranty on General Repairs and 6 Months Extended Warranty on Battery Replacements. Please note that our warranty covers only the repaired part/service and <strong>does not cover liquid damage or new physical impact</strong> to the device after the repair.</p>
+                    <p>We offer 3 months warranty on general repairs and 6 months extended warranty on MacBook and laptop battery replacements. Please note that our warranty covers only the repaired part/service and <strong>does not cover liquid damage or new physical impact</strong> to the device after the repair.</p>
                 </Section2ListItem>
             </div>
             
