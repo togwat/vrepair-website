@@ -1,7 +1,9 @@
-import { fallDown as Menu } from 'react-burger-menu'
+import BurgerMenu from 'react-burger-menu'
 import NavbarLink from './NavbarLink'
 import { useState } from 'react'
 import { ABOUT_ROUTE, BOOKING_ROUTE } from '../constants/Paths'
+
+const { fallDown: Menu } = BurgerMenu
 
 export default function NavbarMenu() {
     const [isOpen, setOpen] = useState(false)
