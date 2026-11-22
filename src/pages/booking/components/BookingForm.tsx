@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './css/BookingForm.css'
 import { OPENING_HOURS } from '../../../constants/OpeningHours'
+import { HOME_ROUTE } from '../../../constants/Paths';
 
 export default function BookingForm() {
     // disable submission button when already submitting
@@ -136,7 +137,7 @@ export default function BookingForm() {
                         <p><strong>Sun: </strong>{OPENING_HOURS.sun}</p>
                     </div>
 
-                    <a className="submit-result-return booking-form-submit transition-default" href="/">Return to home</a>
+                    <a className="submit-result-return booking-form-submit transition-default" href={HOME_ROUTE}>Return to home</a>
                 </div>
             )}      
         </div>

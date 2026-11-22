@@ -5,6 +5,7 @@ import Section1 from './components/Section1'
 import Section2 from './components/Section2'
 import Section3 from './components/Section3'
 import Seo from '../../components/SeoHead'
+import { HOME_ROUTE } from '../../constants/Paths'
 
 export default function Home() {
     return (
@@ -12,7 +13,7 @@ export default function Home() {
             <Seo 
                 title={"E-Store | Professional Electronic Repair Services"}
                 description={"iPhone, Samsung, iPad and laptop repairs in Milford, North Shore. Free quotes, no fix no fee, 3–6 month warranty. Walk in or book online."}
-                path={"/"}
+                path={HOME_ROUTE}
             />
             <Navbar />
             <Hero />
