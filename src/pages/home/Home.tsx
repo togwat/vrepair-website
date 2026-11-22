@@ -4,10 +4,16 @@ import Hero from './components/Hero'
 import Section1 from './components/Section1'
 import Section2 from './components/Section2'
 import Section3 from './components/Section3'
+import Seo from '../../components/SeoHead'
 
 export default function Home() {
     return (
         <>
+            <Seo 
+                title={"E-Store | Professional Electronic Repair Services"}
+                description={"iPhone, Samsung, iPad and laptop repairs in Milford, North Shore. Free quotes, no fix no fee, 3–6 month warranty. Walk in or book online."}
+                path={"/"}
+            />
             <Navbar />
             <Hero />
             <Section1 />

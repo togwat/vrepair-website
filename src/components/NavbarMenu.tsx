@@ -1,6 +1,7 @@
 import { fallDown as Menu } from 'react-burger-menu'
 import NavbarLink from './NavbarLink'
 import { useState } from 'react'
+import { ABOUT_ROUTE, BOOKING_ROUTE } from '../constants/Paths'
 
 export default function NavbarMenu() {
     const [isOpen, setOpen] = useState(false)
@@ -23,8 +24,8 @@ export default function NavbarMenu() {
         <div className="navbar-menu">
             <Menu right onOpen={handleOpen} onClose={handleClose} isOpen={isOpen}>
                 <NavbarLink link="/#services" onClick={handleClose}>Services</NavbarLink>
-                <NavbarLink link="/booking">Booking</NavbarLink>
-                <NavbarLink link="/about">About</NavbarLink>
+                <NavbarLink link={BOOKING_ROUTE}>Booking</NavbarLink>
+                <NavbarLink link={ABOUT_ROUTE}>About</NavbarLink>
             </Menu>
         </div>     
     )

@@ -1,3 +1,4 @@
+import { ABOUT_ROUTE, BOOKING_ROUTE } from "../constants/Paths";
 import Logo from "./Logo";
 import NavbarCall from "./NavbarCall";
 import NavbarLink from "./NavbarLink";
@@ -10,8 +11,8 @@ export default function Navbar() {
             <a href="/"><Logo /></a>
             <div className="navbar-links">
                 <NavbarLink link="/#services">Services</NavbarLink>
-                <NavbarLink link="/booking">Booking</NavbarLink>
-                <NavbarLink link="/about">About</NavbarLink>
+                <NavbarLink link={BOOKING_ROUTE}>Booking</NavbarLink>
+                <NavbarLink link={ABOUT_ROUTE}>About</NavbarLink>
                 <NavbarCall />
             </div>
             <NavbarMenu />

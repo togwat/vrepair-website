@@ -2,12 +2,17 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import './components/css/About.css'
 import AboutContact from './components/AboutContact'
+import Seo from '../../components/SeoHead'
+import { ABOUT_ROUTE } from '../../constants/Paths'
 
 export default function About() {
-    document.title = "About | E-Store"
-
     return (
         <>
+            <Seo 
+                title={"About | E-Store"}
+                description={"Apple & Samsung repair specialists in Milford, Auckland. Screens, batteries, liquid damage, motherboard repairs, software and network services."}
+                path={ABOUT_ROUTE}
+            />
             <Navbar />
             <section className="about-section">
                 <h1>About Us</h1>
