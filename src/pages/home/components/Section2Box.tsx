@@ -3,9 +3,9 @@ import './css/Section2Box.css';
 function StarRating({ rating = 0 }: { rating: number }) {
     const MAX_STARS = 5;
 
-    const empty_star = <span className="material-symbols-outlined rating-star">star</span>
-    const half_star = <span className="material-symbols-outlined rating-star">star_half</span>
-    const full_star = <span className="material-symbols-outlined rating-star" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+    const empty_star = <span className="material-symbols-outlined rating-star" aria-hidden="true">star</span>
+    const half_star = <span className="material-symbols-outlined rating-star" aria-hidden="true">star_half</span>
+    const full_star = <span className="material-symbols-outlined rating-star" style={{ fontVariationSettings: "'FILL' 1" }} aria-hidden="true">star</span>
 
     return (
         <div className="star-rating">
@@ -37,7 +37,7 @@ export default function Section2Box() {
             <StarRating rating={rating} />   
             <h4>{rating} Star Rating</h4>
             <p>Trusted by locals.</p>
-            <a href="https://www.google.com/maps/place/E+Store/@-36.7722017,174.7642281,151m/data=!3m1!1e3!4m8!3m7!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!8m2!3d-36.7723341!4d174.7643282!9m1!1b1!16s%2Fg%2F11cjkgqmwt?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" className="section2-box-link transition-default" target="_blank">Check our Google reviews</a>
+            <a href="https://www.google.com/maps/place/E+Store/@-36.7722017,174.7642281,151m/data=!3m1!1e3!4m8!3m7!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!8m2!3d-36.7723341!4d174.7643282!9m1!1b1!16s%2Fg%2F11cjkgqmwt?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" className="section2-box-link transition-default" target="_blank" rel="noopener">Check our Google reviews</a>
         </div>
     )
 }

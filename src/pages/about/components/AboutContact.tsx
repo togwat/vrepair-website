@@ -6,7 +6,7 @@ export default function AboutContact() {
         <div className="about-contact-container">
                     <div className="about-contact-left">
                         <div className="about-contact-line">
-                            <strong>Address: </strong><a className="transition-default" href="https://www.google.com/maps/place/E+Store/@-36.7722017,174.7642281,151m/data=!3m1!1e3!4m16!1m9!3m8!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!2sE+Store!8m2!3d-36.7723341!4d174.7643282!9m1!1b1!16s%2Fg%2F11cjkgqmwt!3m5!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!8m2!3d-36.7723341!4d174.7643282!16s%2Fg%2F11cjkgqmwt?entry=ttu&amp;g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">3/145 Kitchener Road, Milford, Auckland 0620</a>
+                            <strong>Address: </strong><a className="transition-default" href="https://www.google.com/maps/place/E+Store/@-36.7722017,174.7642281,151m/data=!3m1!1e3!4m16!1m9!3m8!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!2sE+Store!8m2!3d-36.7723341!4d174.7643282!9m1!1b1!16s%2Fg%2F11cjkgqmwt!3m5!1s0x6d0d39102a6f3c07:0x589e76a4d20c7f59!8m2!3d-36.7723341!4d174.7643282!16s%2Fg%2F11cjkgqmwt?entry=ttu&amp;g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">3/145 Kitchener Road, Milford, Auckland 0620</a>
                         </div>
                         <div className="about-contact-line">
                             <strong>Phone (shop): </strong><a className="transition-default" href="tel:094880666">09-4880666</a>

@@ -9,7 +9,7 @@ export default function Section3ListItem ({ icon, children }: Section3ListItemPr
     return (
         <div className="section3-list-item">
             <div className="section3-list-item-icon">
-                <span className="material-symbols-outlined">{icon}</span>
+                <span className="material-symbols-outlined" aria-hidden="true">{icon}</span>
             </div>
 
             <div className="section3-list-item-content">
