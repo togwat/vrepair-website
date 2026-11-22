@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <Seo 
-                title={"E-Store | Professional Electronic Repair Services"}
+                title={"E-Store | Phone, Tablet & Computer Repairs in Milford"}
                 description={"iPhone, Samsung, iPad and laptop repairs in Milford, North Shore. Free quotes, no fix no fee, 3–6 month warranty. Walk in or book online."}
                 path={HOME_ROUTE}
             />
