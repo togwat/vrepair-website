@@ -1,6 +1,11 @@
 import './css/HeroButton.css'
 
-export default function HeroButton({ link, children }: { link: string; children: React.ReactNode }) {
+interface HeroButtonProps {
+    link: string;
+    children: React.ReactNode;
+}
+
+export default function HeroButton({ link, children }: HeroButtonProps) {
     return (
         <a className="hero-button transition-default" href={link}>
             {children}
