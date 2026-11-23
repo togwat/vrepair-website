@@ -67,6 +67,7 @@
 
 .navbar-menu .bm-menu-wrap {
     top: 0;
+    height: auto !important;
 }
 
 .navbar-menu .bm-menu {
